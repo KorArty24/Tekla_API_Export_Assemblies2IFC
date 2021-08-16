@@ -29,10 +29,13 @@ namespace IfcExportPlugin
 			var selectedAssemblies = selector.GetSelectedObjects().ToList<Tekla.Structures.Model.Assembly>();
 			
 			var modelPath = _model.GetInfo().ModelPath; 
-			var modelName = _model.GetInfo().ModelName.Split('.')[0];
+			//var modelName = _model.GetInfo().ModelName.Split('.')[0];
 			foreach (var element in selectedAssemblies)
 			{
-				ExportIFC($"{modelPath}\\IFC\\OUT_{modelName}");
+				var assemblyName = element.Name;
+				var assemblyPrefix = element.AssemblyNumber.Prefix.ToString();
+				var name = assemblyPrefix + "." + assemblyName;
+				ExportIFC($"{modelPath}\\IFC\\OUT_{name}");
 			}
 			
 		}
