@@ -27,8 +27,9 @@ namespace IfcExportPlugin
 			//ArrayList elements = new ArrayList();
 			var selector = new Tekla.Structures.Model.UI.ModelObjectSelector();
 			var selectedAssemblies = selector.GetSelectedObjects().ToList<Tekla.Structures.Model.Assembly>();
-			
-			var modelPath = _model.GetInfo().ModelPath; 
+
+			//var modelPath = _model.GetInfo().ModelPath;
+			string modelPath = textBox1.Text;
 			//var modelName = _model.GetInfo().ModelName.Split('.')[0];
 			foreach (var element in selectedAssemblies)
 			{
@@ -59,26 +60,44 @@ namespace IfcExportPlugin
 
 			// Advanced
 			comp.SetAttribute("Assemblies", 1);
-			comp.SetAttribute("Bolts", 1);
+			comp.SetAttribute("Bolts", 0);
 			comp.SetAttribute("Welds", 0);
 			comp.SetAttribute("SurfaceTreatments", 1);
-
-			comp.SetAttribute("BaseQuantities", 1);
-			comp.SetAttribute("GridExport", 1);
+			comp.SetAttribute("BaseQuantities", 0);
+			comp.SetAttribute("GridExport", 0);
 			comp.SetAttribute("ReinforcingBars", 1);
-			comp.SetAttribute("PourObjects", 1);
-
+			comp.SetAttribute("PourObjects", 0);
 			comp.SetAttribute("LayersNameAsPart", 1);
 			comp.SetAttribute("PLprofileToPlate", 0);
 			comp.SetAttribute("ExcludeSnglPrtAsmb", 0);
-
 			comp.SetAttribute("LocsFromOrganizer", 0);
-
 			comp.Insert();
 		}
-	}
 
-	public static class ExtentionMethods
+        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
+        {
+
+        }
+		private void textBox1_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+		private void button1_Click(object sender, EventArgs e)
+        {
+			FolderBrowserDialog fbd = new FolderBrowserDialog();
+			fbd.RootFolder = Environment.SpecialFolder.Desktop;
+			fbd.Description = "{|Select a folder|}";
+			fbd.ShowNewFolderButton = false;
+			if (fbd.ShowDialog() == DialogResult.OK)
+            {
+				textBox1.Text = fbd.SelectedPath;
+			}
+        }
+
+       
+    }
+
+    public static class ExtentionMethods
 	{
 		public static List<T> ToAList<T>(this IEnumerator enumerator)
 		{

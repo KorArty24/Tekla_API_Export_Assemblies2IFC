@@ -5,7 +5,6 @@ C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\MoreLinq.dll
 C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.ValueTuple.dll
 C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\MoreLinq.xml
 C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.ValueTuple.xml
-C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.csproj.AssemblyReference.cache
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.IfcExportForm.resources
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.Properties.Resources.resources
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.csproj.GenerateResource.cache
@@ -13,3 +12,14 @@ C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlug
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.csproj.CopyComplete
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.exe
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.pdb
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.dll
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.xml
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\IfcExportPlugin.exe.config
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\IfcExportPlugin.exe
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\IfcExportPlugin.pdb
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\MoreLinq.dll
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\System.dll
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\System.ValueTuple.dll
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\MoreLinq.xml
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\System.xml
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Release\System.ValueTuple.xml

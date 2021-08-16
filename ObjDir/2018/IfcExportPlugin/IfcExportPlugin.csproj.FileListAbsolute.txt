@@ -1,0 +1,13 @@
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\IfcExportPlugin.exe.config
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\IfcExportPlugin.exe
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\IfcExportPlugin.pdb
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.dll
+C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.xml
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.IfcExportForm.resources
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.Properties.Resources.resources
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.csproj.GenerateResource.cache
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.csproj.CoreCompileInputs.cache
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.csproj.CopyComplete
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.exe
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.pdb
+C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.csproj.AssemblyReference.cache
