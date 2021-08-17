@@ -21,24 +21,27 @@ namespace IfcExportPlugin
 
 		private void buttonExport_Click(object sender, EventArgs e)
 		{
-			var selection = new Picker()
+			if (_model.GetConnectionStatus())
+			{
+				var selection = new Picker()
 				.PickObjects(Picker.PickObjectsEnum.PICK_N_OBJECTS, "Pick Objects")
 				.ToAList<ModelObject>();
-			//ArrayList elements = new ArrayList();
-			var selector = new Tekla.Structures.Model.UI.ModelObjectSelector();
-			var selectedAssemblies = selector.GetSelectedObjects().ToList<Tekla.Structures.Model.Assembly>();
+				ArrayList selectedAssemblies = new ArrayList(selection);
+				var selector = new Tekla.Structures.Model.UI.ModelObjectSelector();
+				var selected = selector.Select(selectedAssemblies, false);
 
-			//var modelPath = _model.GetInfo().ModelPath;
-			string modelPath = textBox1.Text;
-			//var modelName = _model.GetInfo().ModelName.Split('.')[0];
-			foreach (var element in selectedAssemblies)
-			{
-				var assemblyName = element.Name;
-				var assemblyPrefix = element.AssemblyNumber.Prefix.ToString();
-				var name = assemblyPrefix + "." + assemblyName;
-				ExportIFC($"{modelPath}\\IFC\\OUT_{name}");
+				//var modelPath = _model.GetInfo().ModelPath;
+				string modelPath = textBox1.Text;
+				//var modelName = _model.GetInfo().ModelName.Split('.')[0];
+				foreach (Tekla.Structures.Model.Assembly element in selectedAssemblies)
+				{
+					var assemblyName = element.Name;
+					var assemblyPrefix = element.AssemblyNumber.Prefix.ToString();
+					var name = assemblyPrefix + assemblyName;
+					ExportIFC($"{modelPath}\\{name}");
+				}
+
 			}
-			
 		}
 
 		private static void ExportIFC(string outputFileName)
@@ -62,15 +65,15 @@ namespace IfcExportPlugin
 			comp.SetAttribute("Assemblies", 1);
 			comp.SetAttribute("Bolts", 0);
 			comp.SetAttribute("Welds", 0);
-			comp.SetAttribute("SurfaceTreatments", 1);
-			comp.SetAttribute("BaseQuantities", 0);
+			comp.SetAttribute("SurfaceTreatments", 0);
+			comp.SetAttribute("BaseQuantities", 1);
 			comp.SetAttribute("GridExport", 0);
 			comp.SetAttribute("ReinforcingBars", 1);
 			comp.SetAttribute("PourObjects", 0);
 			comp.SetAttribute("LayersNameAsPart", 1);
-			comp.SetAttribute("PLprofileToPlate", 0);
+			comp.SetAttribute("PLprofileToPlate", 1);
 			comp.SetAttribute("ExcludeSnglPrtAsmb", 0);
-			comp.SetAttribute("LocsFromOrganizer", 0);
+			comp.SetAttribute("LocsFromOrganizer", 1);
 			comp.Insert();
 		}
 
@@ -94,10 +97,8 @@ namespace IfcExportPlugin
 			}
         }
 
-       
     }
-
-    public static class ExtentionMethods
+	public static class ExtentionMethods
 	{
 		public static List<T> ToAList<T>(this IEnumerator enumerator)
 		{
@@ -111,4 +112,5 @@ namespace IfcExportPlugin
 			return list;
 		}
 	}
+
 }

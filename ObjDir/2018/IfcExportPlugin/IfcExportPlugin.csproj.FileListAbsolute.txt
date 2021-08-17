@@ -10,4 +10,3 @@ C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlug
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.csproj.CopyComplete
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.exe
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.pdb
-C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2018\IfcExportPlugin\IfcExportPlugin.csproj.AssemblyReference.cache
