@@ -1,10 +1,6 @@
 C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\IfcExportPlugin.exe.config
 C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\IfcExportPlugin.exe
 C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\IfcExportPlugin.pdb
-C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\MoreLinq.dll
-C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.ValueTuple.dll
-C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\MoreLinq.xml
-C:\Users\arteo\Source\Repos\ifc-export\IfcExportPlugin\bin\Debug\System.ValueTuple.xml
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.IfcExportForm.resources
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.Properties.Resources.resources
 C:\Users\arteo\Source\Repos\ifc-export\ObjDir\2019\IfcExportPlugin\IfcExportPlugin.csproj.GenerateResource.cache
